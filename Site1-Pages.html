@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<style>
+	</style>
+	<script>
+		function changeImageFunction() {
+			if (document.getElementById("changeImage").src == "file:///C:/Users/gwc/Desktop/Homepage%20Project/Find%20Blob%20Screenshot.png"){
+				document.getElementById("changeImage").src = "file:///C:/Users/gwc/Desktop/Homepage%20Project/Robot%20Screenshot%202.png";
+				document.getElementById("changeImage").width = "500";
+			}
+			else {
+				document.getElementById("changeImage").src = "file:///C:/Users/gwc/Desktop/Homepage%20Project/Find%20Blob%20Screenshot.png";
+			}
+		}	
+	</script>
+</head>
+
+<body>
+<div data-role="page" id = "home">
+  <div data-role="header" style="text-align:center;">
+    <h1>Angel Zhou</h1>
+	<h2>Welcome to My Homepage</h2>
+	<a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+    <a href="http://www.google.com/"target="_blank" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-right">Search</a>
+    <div data-role="controlgroup" data-type="horizontal">
+      <a href="#SolarEnergy" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">Solar Energy</a>
+      <a href="#WhatBin" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">What Bin?</a>
+    </div>
+  </div>
+
+  <div data-role="main" class="ui-content">
+  </div>
+  <div data-role="footer" style="text-align:center;">
+    <div data-role="controlgroup" data-type="horizontal">
+      <a href="https://angelzhou16.wordpress.com/" target="_blank" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">Wordpress</a>
+      <a href="https://github.com/azhou16?tab=repositories" target="_blank" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">Github</a>
+      <a href="https://www.pinterest.com/angelz168/"  target="_blank" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">Pinterest</a>
+    </div>
+  </div>
+</div>
+
+
+<div data-role="page" id = "SolarEnergy">
+	<div data-role = "header">
+		<h1>Solar Energy</h1>
+		<a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+		<div data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+		  <a href="#MyData" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-center">My Data</a>
+		  <a href="#DataComparison" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-center">Data Comparison</a>
+		  <a href="#SolarInfo" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-center">More About Solar Energy/Panels</a>
+		</div>
+	</div>
+	<div data-role="main" class="ui-content">
+		<a target="_blank" href="https://www.khanacademy.org/computer-programming/gwc-sky/6356023885561856">
+			<center><img src = "file:///C:/Users/gwc/Desktop/Homepage%20Project/DaytoNight%20Screenshot.png" "width="300" height="300"> <center>	
+		</a>	    </div>
+	<div data-role = "footer" style="text-align:center;">
+		<a href="javascript:history.go(-1)"class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-left">Go Back</a>
+	</div>
+</div>
+
+<div data-role="page" id = "WhatBin">
+	<div data-role = "header">
+		<h1>What Bin?</h1>
+		<a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+	</div>
+	<div data-role="main" class="ui-content">
+    </div>
+	<div data-role = "footer" style="text-align:center;">
+		<a href="javascript:history.go(-1)"class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-left">Go Back</a>
+	</div>
+</div>
+
+<div data-role="page" id = "MyData">
+	<div data-role = "header">
+		<h1>My Data</h1>
+		<a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+	</div>
+	<div data-role="main" class="ui-content">
+    </div>
+	<div data-role = "footer" style="text-align:center;">
+		<a href="javascript:history.go(-1)"class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-left">Go Back</a>
+	</div>
+</div>
+
+<div data-role="page" id = "DataComparison">
+	<div data-role = "header">
+		<h1>Data Comparison</h1>
+		<a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+	</div>
+	<div data-role="main" class="ui-content">
+    </div>
+	<div data-role = "footer" style="text-align:center;">
+		<a href="javascript:history.go(-1)"class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-left">Go Back</a>
+	</div>
+</div>
+
+<div data-role="page" id = "SolarInfo">
+	<div data-role = "header">
+		<h1>More About Solar Energy/Panels</h1>
+		<a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+	</div>
+	<div data-role="main" class="ui-content">
+    </div>
+	<div data-role = "footer" style="text-align:center;">
+		<a href="javascript:history.go(-1)"class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-left">Go Back</a>
+	</div>
+</div>
+
+</body>
+</html>
