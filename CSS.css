@@ -1,3 +1,4 @@
+/*Footer*/
 .ui-page {
     min-height:100% !important;
     height:auto !important;
@@ -29,21 +30,3 @@
   display: table-cell;
 
 }
-
-
-/*
-.date li{
-  width: 33.333%;
-
-}
-
-.time li{
-  width: 33.333%;
-
-}
-
-.weather li{
-  width: 33.333%;
-
-}
-*/
