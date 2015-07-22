@@ -1,8 +1,7 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+<!--please add to github -Thanks, Eli Perr-->
+<head><div id="everything">
   <meta charset="utf-8">
   <title>WhatBin?</title>
   <link rel="stylesheet" href="jqueryLib/jquery-ui.css">
@@ -12,13 +11,22 @@
  <!-- <link rel="stylesheet" href="/resources/demos/style.css">-->
 <!--  <input type="text" id="search"=> </input> -->
 <h1>What would you like to get rid of? </h1>
- <input type="text" id="user_input"> </input>
+<p id="search_word">search</p> <!--<br>--> <!--should have nice search and logo-->
+ <input onkeydown="keyCode(event)" type="text" id="user_input"> </input>
 <button onclick="test()">Submit</button> <!--later be able to submit with the enter key-->
+<!--<input onkeydown="keyCode(event)">-->  <!--for enter key use-->
 
 <!-- add this line for function to write into -->
   
 
-
+<style>
+#everything
+{text-align:center;}
+/*#search_word {position:relative; top:50px; right:150px;}*/ /*I dont know why but this messes up the code*/
+#bin {position:relative; bottom: 150px; z-index:1;}
+#message { position:relative; top:300px; z-index: 2;}
+#notFound {position:relative; bottom:75px;}
+</style>
  
 </head>
 <body>
@@ -28,13 +36,22 @@
  
 
 <p id="search"></p>
-<p id="ans"></p>
+<p id="message"></p>
+<p id="ans"> <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Question_mark_(black_on_white).png" height=200px</p> <!--placeholder img-->
+
+</div>
 
 <script src="final project8.js"></script>
 
 
 </body>
 </html>
+<!--Goals-->
 <!--make autocorrect look better-->
 <!--add database--->
-<!--add tips ie if search =plastic what plastics can put in-->
+<!--be able to append data-->
+<!--add tips ie if search =plastic what plastics can put in -food soiled container
+ styrofoam taken to be reused at shipping centers, compostable toothbursh>
+<!--trader hoe soup containers go where?-->
+<!--better search algorithm-->
+<!--Brenda: fonts, 404 pic, starting pic-->
