@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+	<link rel="stylesheet" href="CSS.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<style>
+		tr {
+			border-bottom: 1px solid lightgray;
+		}
+	</style>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+</head>
+
+<body>
+<!--Home Page-->
+<div data-role="page" id = "home">
+  <div data-role="header" style="text-align:center;" id = "logo">
+	<h1>Welcome to the Homepage</h1>
+	<a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" style="background:#FFEBFF;">Home</a>
+    <a href="http://www.google.com/"target="_blank" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-right" style="background:#FFEBFF;">Search</a>
+  </div>
+
+  <div data-role="main" class="ui-content">
+		<div data-role="navbar">
+		  <ul>
+			<li><a href="#SolarEnergy" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left" style="background:#FFEBFF;">Solar Energy</a><br><br><center><img src="file:///C:/Users/gwc/Desktop/Final%20Project/SolarPanel.jpg" alt="HTML5 Icon" style="width:500px;height:500px;"><center></li>
+			<li><a href="#WhatBin" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left" style="background:#FFEBFF;">What Bin?</a></li>
+		  </ul>
+		</div>
+  </div>
+	<div data-role = "footer" style="text-align:center;">
+		<div data-role="navbar">
+		  <ul>
+			<li><div>Date:</div><div id="date1"></div></li>
+			<li><div>Time:</div></li>
+			<li><div>Weather:</div></li>
+		  </ul>
+		</div>
+		<!--Date-->
+		<script>
+			var d = new Date();
+			document.getElementById("date1").innerHTML = d.toDateString();
+		</script>
+	</div>
+</div>
+
+<!--Solar Energy Page-->
+<div data-role="page" id = "SolarEnergy">
+	<div data-role="panel" id="myPanel" data-position="right"> 
+		<div data-role = "header">
+			<center><h2>Settings</h2></center>
+		</div>
+		<div data-role="fieldcontain">
+			<label for="flip-b"><b>Alerts:</b></label>
+			<center><select name="slider" id="flip-b" data-role="slider"><center>
+				<option value="On">On</option>
+				<option value="Off">Off</option>
+			</select> 
+		</div>
+		<p><b>Location:</b> San Francisco</p>
+		<p><b>Account Info:</b> Angel Zhou</p>
+	</div> 
+	<div data-role = "header">
+		<h1>Solar Energy</h1>
+		<a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left"style="background:#FFEBFF;">Home</a>
+		<div data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+		  <a href="#MyData" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-center"style="background:#FFEBFF;">My Data</a> 
+		  <a href="#DataComparison" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-center"style="background:#FFEBFF;">Data Comparison</a> 
+		  <a href="#SolarInfo" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-center" style="background:#FFEBFF;">More About Solar Energy/Panels</a>
+		</div>
+		<!--Slider-->
+		<a href="#myPanel" class="ui-btn ui-corner-all ui-shadow ui-icon-bullets ui-btn-icon-right" style="background:#FFEBFF;">Settings</a>
+		<!--onOffSwitch-->
+		<!--<a href="#onoffswitch" class="onoffswitch">OnOffSwitch</a>-->
+	</div>
+	<div data-role="main" class="ui-content">
+		<center><img src="file:///C:/Users/gwc/Desktop/Final%20Project/SolarPanel.jpg" alt="HTML5 Icon" style="width:500px;height:500px;"><center>
+	</div>
+	<div data-role = "footer" style="text-align:center;">
+		<div data-role="navbar">
+		  <ul>
+			<li><div>Date:</div><div id="date2"></div></li>
+			<li><div>Time:</div></li>
+			<li><div>Weather:</div></li>
+		  </ul>
+		</div>
+		<!--Date-->
+		<script>
+			var d = new Date();
+			document.getElementById("date2").innerHTML = d.toDateString();
+		</script>
+		<a href="javascript:history.go(-1)"class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-left" style="background:#FFEBFF;">Go Back</a>
+	</div>
+</div>
+
+<div data-role="page" id = "MyData">
+	<div data-role = "header">
+		<h1>My Data</h1>
+		<a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" style="background:#FFEBFF;">Home</a>
+	</div>
+	<div data-role="main" class="ui-content">
+		<table data-role="table" data-mode="columntoggle" class="ui-responsive ui-shadow" id="myTable"">
+		  <thead>
+			<tr>
+			  <th>Date</th>
+			  <th data-priority="1">Energy Produced</th>
+			  <th data-priority="2">Energy Used</th>
+			  <th data-priority="3">Net</th>
+			  <th data-priority="4">Amount Earned</th>
+			</tr>
+		  </thead>
+		  <tbody>
+			<tr>
+			  <td>July 1, 2015</td>
+			  <td>Alfreds Futterkiste</td>
+			  <td>Maria Anders</td>
+			  <td>Obere Str. 57</td>
+			  <td>Berlin</td>
+			</tr>
+			<tr>
+			  <td>July 2, 2015</td>
+			  <td>Antonio Moreno Taquería</td>
+			  <td>Antonio Moreno</td>
+			  <td>Mataderos 2312</td>
+			  <td>México D.F.</td>
+			</tr>
+			<tr>
+			  <td>July 3, 2015</td>
+			  <td>Around the Horn</td>
+			  <td>Thomas Hardy</td>
+			  <td>120 Hanover Sq.</td>
+			  <td>London</td>
+			</tr>
+			<tr>
+			  <td>July 4, 2015</td>
+			  <td>Berglunds snabbköp</td>
+			  <td>Christina Berglund</td>
+			  <td>Berguvsvägen 8</td>
+			  <td>Luleå</td>
+			</tr>
+			<tr>
+			  <td>July 5, 2015</td>
+			  <td>Berglunds snabbköp</td>
+			  <td>Christina Berglund</td>
+			  <td>Berguvsvägen 8</td>
+			  <td>Luleå</td>
+			</tr>
+		  </tbody>
+		</table>
+    </div>
+	<div data-role = "footer" style="text-align:center;">
+		<div data-role="navbar">
+		  <ul>
+			<li><div>Date:</div><div id="date3"></div></li>
+			<li><div>Time:</div></li>
+			<li><div>Weather:</div></li>
+		  </ul>
+		</div>
+		<!--Date-->
+		<script>
+			var d = new Date();
+			document.getElementById("date3").innerHTML = d.toDateString();
+		</script>
+		<a href="javascript:history.go(-1)"class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-left" style="background:#FFEBFF;">Go Back</a>
+	</div>
+</div>
+
+<div data-role="page" id = "DataComparison">
+	<div data-role = "header">
+		<h1>Data Comparison</h1>
+		<a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" style="background:#FFEBFF;">Home</a>
+	</div>
+	
+	<div data-role="main" class="ui-content">
+		<script src="Chart.js"></script>
+		<center><div id="linechart_material"></div><center>
+    </div>
+	
+	<div data-role = "footer" style="text-align:center;">
+		<div data-role="navbar">
+		  <ul>
+			<li><div>Date:</div><div id="date4"></div></li>
+			<li><div>Time:</div></li>
+			<li><div>Weather:</div></li>
+		  </ul>
+		</div>
+		<!--Date-->
+		<script>
+			var d = new Date();
+			document.getElementById("date4").innerHTML = d.toDateString();
+		</script>
+		<a href="javascript:history.go(-1)"class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-left" style="background:#FFEBFF;">Go Back</a>
+	</div>
+</div>
+
+<div data-role="page" id = "SolarInfo">
+	<div data-role = "header">
+		<h1>More About Solar Energy/Panels</h1>
+		<a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left" style="background:#FFEBFF;">Home</a>
+	</div>
+	<div data-role="main" class="ui-content">
+		<center><iframe width="560" height="400" src="https://www.youtube.com/embed/0gYotcwJaj0" frameborder="0" allowfullscreen></iframe><center>
+		<a target="_blank" href="http://www.solar-is-future.com/solar-energy-source/how-photovoltaics-work/animation/index.html">
+			<img style="position: absolute; right:465px; top: 470px; border:none;" src = "file:///C:/Users/gwc/Desktop/Final%20Project/SolarAnimation.png" "width="540" height="350">	
+		</a>
+    </div>
+	<div data-role = "footer" style="text-align:center;">
+		<div data-role="navbar">
+		  <ul>
+			<li><div>Date:</div><div id="date5"></div></li>
+			<li><div>Time:</div></li>
+			<li><div>Weather:</div></li>
+		  </ul>
+		</div>
+		<!--Date-->
+		<script>
+			var d = new Date();
+			document.getElementById("date5").innerHTML = d.toDateString();
+		</script>
+		<a href="javascript:history.go(-1)"class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-left" style="background:#FFEBFF;">Go Back</a>
+	</div>
+</div>
+
+<!--Recycling-->
+<div data-role="page" id = "WhatBin">
+	<div data-role = "header">
+		<h1>What Bin?</h1>
+		<a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+	</div>
+	<div data-role="main" class="ui-content">
+    </div>
+	<div data-role = "footer" style="text-align:center;">
+		<a href="javascript:history.go(-1)"class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-left">Go Back</a>
+	</div>
+</div>
+
+</body>
+</html>
