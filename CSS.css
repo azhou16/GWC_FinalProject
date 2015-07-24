@@ -1,3 +1,14 @@
+/*Font*/
+h1{
+	color:#fff;
+    font-size: 100px;
+}
+
+/*Chart*/
+tr {
+	border-bottom: 1px solid lightgray;
+}
+
 /*Footer*/
 .ui-page {
     min-height:100% !important;
@@ -5,28 +16,54 @@
 }
 
 .ui-content {
-    margin-bottom:42px; /* HEIGHT OF YOUR FOOTER */
+    min-height:100% !important;
+    height:auto !important;
 }
 
 .ui-footer {
-    position:absolute !important;
-    width:100%;
-    bottom:0;
+	width:100%;
+	position: fixed !important;
+	bottom: 0px;
 }
 
-.ui-footer li {
-    display:inline;
-	width: 33.333%;
+/*Image Styling*/
+
+#heading, img{
+	position: fixed !important;
+	min-width: 110% !important;
+	height: 90% !important;
+	left: 0px;
+	top: 43px;
 }
 
-#footer_nav 
-  width: 95%;
-  display: table;
-
+#image, img{
+	width: 100px;
+	height: 500px;
 }
 
-#footer_nav  li{
-  width: 33.3%;
-  display: table-cell;
+/*Color Overrides*/
+#SolarEnergy, .ui-page { 
+	background-image: url('SolarPanelSunset.jpg');
+	background-size: cover;
+}
 
+#SolarEnergyBackground { 
+    background: #C4F2FD !important;
+}
+
+.ui-page { 
+background:#F8F8FF;
+}
+
+#logo,.ui-header {
+    background-image: url('Final%20Project%20Logo.png') !important;
+	height: 100% !important;
+}
+
+.ui-page .ui-header {
+    background: #C4F2FD !important;
+}
+
+.ui-page .ui-footer {
+    background: #C4F2FD !important;
 }

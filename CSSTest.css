@@ -1,0 +1,47 @@
+body {
+	background-image: url("SolarPanelSunset.jpg");
+	background-size:cover;
+	color:#fff;
+}
+
+#Name {
+	color:#fff;
+	position:relative;
+	top:170px;
+	left:350px;
+	font:400 100px/1.3 'Arizonia', Helvetica, sans-serif;
+	font-size:120px;
+	text-shadow: 4px 4px 0px rgba(0,0,0,0,1);
+}
+
+.ghost-button {
+  position:relative;
+  top:50px;
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: border-color 0.3s ease-out,
+              color 0.3s ease-out;
+}
+
+.ghost-button:hover,
+.ghost-button:active {
+  color: #0066ff;
+  border-color: #0066ff;
+  transition: border-color 0.4s ease-in,
+              color 0.4s ease-in;
+}
+
+i.small  {
+	font-size: 1.8em;
+	position:relative;
+	top:55px;
+	left:200px;
+	color:#fff;
+}
+

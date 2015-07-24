@@ -1,0 +1,5 @@
+var currentTime = new Date()
+var s = currentTime.getSeconds()
+var m = currentTime.getMinutes()
+var h = currentTime.getHours()
+document.write(h+":"+m+":"+s)
