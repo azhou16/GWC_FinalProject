@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--please add to github -Thanks, Eli Perr-->
+<head><div id="everything">
+  <meta charset="utf-8">
+  <title>BinSure</title>
+<link rel="stylesheet" href="jqueryLib/jquery-ui.css">
+<!-- Include meta tag to ensure proper rendering and touch zooming -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<!-- Include the jQuery library -->
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<!-- Include the jQuery Mobile library -->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="jqueryLib/external/jquery/jquery.js"></script>
+<script src="jqueryLib/jquery-ui.js"></script>
+ 
+ <!------------------------------------------->
+
+  
+
+<style>
+#everything
+{text-align:center;}
+/*#search_word {position:relative; top:50px; right:150px;}*/ /*I dont know why but this messes up the code*/
+#bin {position:relative; bottom: 150px; z-index:1;}
+#message { position:relative; top:300px; z-index: 2;}
+/*#notFound {position:relative; bottom:75px;}*/
+#tip {position:relative;bottom:100px;}
+ui-body-c, .ui-overlay-c { background:#1199A4; }
+.ui-page { background:"black"; } <!--must override-->
+#bulb { position: relative; bottom: 200px; right:50px;
+}
+/*tip_btn { position: relative; bottom: 500px;
+}*/
+/*#404bin {
+position:relative; bottom: ;
+}*/
+#tiplist { float: left !important;
+ text-align: left !important;
+ margin-left : 300px;
+}
+</style>
+ 
+</head>
+<body>
+
+
+<!--page one-->
+<div data-role="page" id="pageone">
+<div data-role="header">
+<h3> BinSure </h3>
+</div>
+
+   
+  <div data-role="main" class="ui-content">
+  <script src="BinSure JS.js"></script>
+  
+ 
+
+ <h1>What would you like to get rid of? </h1>
+<!--p id="search_word">search</p>--> <!--<br>--> <!--should have nice search and logo-->
+ <input onkeydown="keyCode(event)" type="text" id="user_input"> </input> <!-- why is the backrgound also a button-->
+<a href="" class="ui-btn ui-corner-all ui-shadow ui-icon-search ui-btn-icon-right" role="button" onclick="test()" >Search</a> <!--later be able to submit with the enter key-->
+<!--<input onkeydown="keyCode(event)">-->  <!--for enter key use-->
+
+<!-- add this line for function to write into -->
+
+<p id="search"></p>
+<p id="message"></p> 
+<p id="ans"> <img src="Unknown Bin.png" height=500px ></p> <!--question img-->
+<div id="tip">   <a href="#pagetwo" class="ui-btn"style="height: 35px; width: 100px; margin-left: 620px"> <p> Tips </p><img src="Tip Icon.png" style= "margin-left: -70px; height: 100px; margin-top: -200px"></a>
+</div> <!--need to be centered for all screens-->
+ </div> 
+ 
+ </div>
+
+
+
+
+<div data-role="page" id="pagetwo">
+  <div data-role="header">
+   <!--
+   <div id="bulb" style= "margin-bottom: -70px; margin-left: -75px"><img src="Tip Icon.png" height=100px></div> <h1>Tips</h1>
+   -->
+    <div id="bulb" style= "margin-bottom: -70px; margin-left: -75px"><img src="Tip Icon.png" height=100px></div> <h1>Tips</h1>
+  </div>
+  
+  <div data-role="main" class="ui-content">
+   <br> <div id="tiplist">
+   <ul type="circle">
+   <li> In general plastics that are rigid and cannot be easily ripped apart by hand are recyclable <br> while soft, easily-broken plastics must go in the trash. </li> <br>
+   <li> All paper products that have been food-soiled should be put in the compost. </li> <br>
+   <li> While styrofoam must be put in the garbage styrofoam peanuts can be dropped off at many mail houses for reuse.</li><br>
+   </ul>
+   </div> <!--div for list-->
+   </div> <!--div for main-->
+   <div data-role="footer">
+  
+    <a href="#pageone" class="ui-btn"><b>Back</b></a>
+	</div> <!--div for footer-->
+  </div> <!--div for page2-->
+</div> <!--div for everything-->
+     
+	 
+  
+ 
+
+
+
+
+
+
+
+</body>
+</html>
+<!--Goals-->
+<!--tODAY:
+TIPS; WHEN TIPS show up page of tips available-->
+<!--make autocorrect look better-->
+<!--add database---> <!--WITH EVERY ITEM IN IT--> <!-- CROWDSOURCING-->
+<!--be able to append data-->
+<!--add tips ie if search =plastic what plastics can put in -food soiled container
+ styrofoam taken to be reused at shipping centers, compostable toothbursh>
+<!--trader hoe soup containers go where?-->
+<!--better search algorithm-->
+<!--Brenda: fonts, 404 pic, starting pic-->

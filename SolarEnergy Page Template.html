@@ -1,0 +1,46 @@
+<!--Solar Energy Page-->
+<div data-role="page" id = "SolarEnergy">
+	<div data-role="panel" id="myPanel" data-position="right"> 
+		<div data-role = "header">
+			<center><h2>Settings</h2></center>
+		</div>
+		<div data-role="fieldcontain">
+			<label for="flip-b"><b>Alerts:</b></label>
+			<center><select name="slider" id="flip-b" data-role="slider"><center>
+				<option value="On">On</option>
+				<option value="Off">Off</option>
+			</select> 
+		</div>
+		<p><b>Location:</b> San Francisco</p>
+		<p><b>Account Info:</b> Angel Zhou</p>
+	</div> 
+	<div data-role = "header">
+		<a href="#home" class="ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left"style="background:#FFEBFF;">Home</a>
+		<!--Slider-->
+		<a href="#myPanel" class="ui-btn ui-corner-all ui-shadow ui-icon-bullets ui-btn-icon-right" style="background:#FFEBFF;">Settings</a>
+		<!--onOffSwitch-->
+		<!--<a href="#onoffswitch" class="onoffswitch">OnOffSwitch</a>-->
+	</div>
+	<div data-role="main" class="ui-content" id = "SolarEnergyBackground">
+		<div data-role="controlgroup" data-type="horizontal" style="text-align:center;">
+		  <a href="#MyData" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-center"style="background:#FFEBFF;">My Data</a> 
+		  <a href="#DataComparison" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-center"style="background:#FFEBFF;">Data Comparison</a> 
+		  <a href="#SolarInfo" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-center" style="background:#FFEBFF;">More About Solar Energy/Panels</a>
+		</div>
+	</div>
+	<div data-role = "footer" style="text-align:center;">
+		<div data-role="navbar">
+		  <ul>
+			<li><div>Date:</div><div id="date2"></div></li>
+			<li><div>Time:</div></li>
+			<li><div>Weather:</div></li>
+		  </ul>
+		</div>
+		<!--Date-->
+		<script>
+			var d = new Date();
+			document.getElementById("date2").innerHTML = d.toDateString();
+		</script>
+		<a href="javascript:history.go(-1)"class="ui-btn ui-corner-all ui-icon-back ui-btn-icon-left" style="background:#FFEBFF;">Go Back</a>
+	</div>
+</div>

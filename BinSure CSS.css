@@ -1,0 +1,20 @@
+#everything
+{text-align:center;}
+/*#search_word {position:relative; top:50px; right:150px;}*/ /*I dont know why but this messes up the code*/
+#bin {position:relative; bottom: 150px; z-index:1;}
+#message { position:relative; top:300px; z-index: 2;}
+/*#notFound {position:relative; bottom:75px;}*/
+#tip {position:relative;bottom:100px;}
+ui-body-c, .ui-overlay-c { background:#1199A4; }
+.ui-page { background:"black"; } <!--must override-->
+#bulb { position: relative; bottom: 200px; right:50px;
+}
+/*tip_btn { position: relative; bottom: 500px;
+}*/
+/*#404bin {
+position:relative; bottom: ;
+}*/
+#tiplist { float: left !important;
+ text-align: left !important;
+ margin-left : 300px;
+}

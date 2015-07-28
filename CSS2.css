@@ -9,6 +9,20 @@ tr {
 	border-bottom: 1px solid lightgray;
 }
 
+#home{
+	background-image: url('Final%20Project%20Logo.png');
+	background-size: cover;
+}
+
+/*Heading, Footer*/
+.ui-page .ui-header {
+    background: #C4F2FD !important;
+}
+
+.ui-page .ui-footer {
+    background: #C4F2FD !important;
+}
+
 /*Footer*/
 .ui-page {
     min-height:100% !important;
@@ -26,58 +40,13 @@ tr {
 	bottom: 0px;
 }
 
-/*Homescreen Logo*/
-#home{
-	background-image: url('Final%20Project%20Logo.png');
-	background-size: cover;
-}
-
-/*Image Styling
-#heading, img{
-	position: fixed !important;
-	min-width: 110% !important;
-	height: 90% !important;
-	left: 0px;
-	top: 43px;
-}
-
-#image, img{
-	width: 100px;
-	height: 500px;
-}
-
-#ImageTags{
-	height: 50px;
-	width: 50px;
-}
-*/
-
-/*Color Overrides*/
-#SolarEnergy, .ui-page { 
+#SolarEnergy{
 	background-image: url('Background%20Image2.png');
 	background-size: cover;
 	top: 0px;
-
 }
 
-#SolarEnergyBackground { 
-    background: #C4F2FD !important;
-}
-
-.ui-page { 
-background:#F8F8FF !important;
-}
-
-#logo,.ui-header {
-    background-image: #C4F2FD !important;
-	height: 100% !important;
-}
-
-.ui-page .ui-header {
-    background: #C4F2FD !important;
-}
-
-.ui-page .ui-footer {
+#MainColor{
     background: #C4F2FD !important;
 }
 
