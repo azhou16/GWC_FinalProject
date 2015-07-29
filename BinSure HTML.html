@@ -1,39 +1,47 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <!--please add to github -Thanks, Eli Perr-->
-<head><div id="everything">
+<head> <div id="everything">
   <meta charset="utf-8">
   <title>BinSure</title>
-<link rel="stylesheet" href="jqueryLib/jquery-ui.css">
-<!-- Include meta tag to ensure proper rendering and touch zooming -->
+  <link rel="stylesheet" href="jqueryLib/jquery-ui.css">
+  <!-- Include meta tag to ensure proper rendering and touch zooming -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <!-- Include jQuery Mobile stylesheets -->
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
 <!-- Include the jQuery library -->
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
 <!-- Include the jQuery Mobile library -->
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-<script src="jqueryLib/external/jquery/jquery.js"></script>
-<script src="jqueryLib/jquery-ui.js"></script>
+  
  
+  <script src="jqueryLib/external/jquery/jquery.js"></script>
+  <script src="jqueryLib/jquery-ui.js"></script>
+  <link href="http://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet" type="text/css"> 
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
  <!------------------------------------------->
 
   
 
 <style>
-#everything
-{text-align:center;}
+#everything 
+{text-align:center;font-family:'Open Sans Condensed', sans-serif !important; font-weight:lighter ! important; font-size:20px ! important; color:white !important;}
 /*#search_word {position:relative; top:50px; right:150px;}*/ /*I dont know why but this messes up the code*/
 #bin {position:relative; bottom: 150px; z-index:1;}
 #message { position:relative; top:300px; z-index: 2;}
 /*#notFound {position:relative; bottom:75px;}*/
-#tip {position:relative;bottom:100px;}
+#tip {position:relative; bottom:100px;}
 ui-body-c, .ui-overlay-c { background:#1199A4; }
 .ui-page { background:"black"; } <!--must override-->
 #bulb { position: relative; bottom: 200px; right:50px;
 }
-/*tip_btn { position: relative; bottom: 500px;
-}*/
+tip_btn { position: absolute; bottom: 500px; 
+}
 /*#404bin {
 position:relative; bottom: ;
 }*/
@@ -41,6 +49,22 @@ position:relative; bottom: ;
  text-align: left !important;
  margin-left : 300px;
 }
+
+
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper 
+{
+background-color: #8AE65C !important;
+color:white !important }
+.ui-bar-a, .ui-page-theme-a .ui-bar-inherit, html .ui-bar-a .ui-bar-inherit, html .ui-body-a .ui-bar-inherit, html body .ui-group-theme-a .ui-bar-inherit
+{
+background-color: #3385FF
+!important;
+color: black
+!important;}
+#tippy{
+font-family:'Open Sans Condensed', sans-serif !important;
+}
+
 </style>
  
 </head>
@@ -50,7 +74,7 @@ position:relative; bottom: ;
 <!--page one-->
 <div data-role="page" id="pageone">
 <div data-role="header">
-<h3> BinSure </h3>
+<h3 style="font-size:50px; font-family:'Berkshire Swash', Helvvetica, sans-serif; color:#fff background-color:#778899 ! important"> BinSure </h3>
 </div>
 
    
@@ -70,7 +94,9 @@ position:relative; bottom: ;
 <p id="search"></p>
 <p id="message"></p> 
 <p id="ans"> <img src="Unknown Bin.png" height=500px ></p> <!--question img-->
-<div id="tip">   <a href="#pagetwo" class="ui-btn"style="height: 35px; width: 100px; margin-left: 620px"> <p> Tips </p><img src="Tip Icon.png" style= "margin-left: -70px; height: 100px; margin-top: -200px"></a>
+
+
+<div id="tip">  <a href="#pagetwo" class="ui-btn"style="height: 35px; width: 100px; margin-left: 850px"> <p> Tips </p><img src="Tip Icon.png" style= "margin-left: -70px; height: 100px; margin-top: -200px"></a>
 </div> <!--need to be centered for all screens-->
  </div> 
  
@@ -84,7 +110,7 @@ position:relative; bottom: ;
    <!--
    <div id="bulb" style= "margin-bottom: -70px; margin-left: -75px"><img src="Tip Icon.png" height=100px></div> <h1>Tips</h1>
    -->
-    <div id="bulb" style= "margin-bottom: -70px; margin-left: -75px"><img src="Tip Icon.png" height=100px></div> <h1>Tips</h1>
+    <div id="bulb" style= "margin-bottom: -70px; margin-left: -75px"><img src="Tip Icon.png" height=100px></div> <h1 id="tippy">Tips</h1>
   </div>
   
   <div data-role="main" class="ui-content">
@@ -100,8 +126,14 @@ position:relative; bottom: ;
   
     <a href="#pageone" class="ui-btn"><b>Back</b></a>
 	</div> <!--div for footer-->
+	
+  
+
+  
   </div> <!--div for page2-->
-</div> <!--div for everything-->
+
+
+ <!--div for everything-->
      
 	 
   
